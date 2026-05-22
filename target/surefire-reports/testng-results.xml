@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-22T15:51:02 PDT" name="Surefire suite" finished-at="2026-05-22T15:52:21 PDT" duration-ms="79085">
+    <groups>
+    </groups>
+    <test started-at="2026-05-22T15:51:02 PDT" name="Surefire test" finished-at="2026-05-22T15:52:21 PDT" duration-ms="79085">
+      <class name="tests.PIMTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:02 PDT" name="setUp" finished-at="2026-05-22T15:51:09 PDT" duration-ms="7415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAgregarEmpleado()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:09 PDT" name="testAgregarEmpleado" description="TC-06: Agregar empleado nuevo con datos validos" finished-at="2026-05-22T15:51:23 PDT" duration-ms="14446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAgregarEmpleado -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:23 PDT" name="tearDown" finished-at="2026-05-22T15:51:25 PDT" duration-ms="1859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:25 PDT" name="setUp" finished-at="2026-05-22T15:51:34 PDT" duration-ms="8440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBuscarEmpleadoExistente()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:34 PDT" name="testBuscarEmpleadoExistente" description="TC-07: Buscar empleado existente muestra resultados" finished-at="2026-05-22T15:51:40 PDT" duration-ms="6286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuscarEmpleadoExistente -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:40 PDT" name="tearDown" finished-at="2026-05-22T15:51:40 PDT" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:40 PDT" name="setUp" finished-at="2026-05-22T15:51:48 PDT" duration-ms="7986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBuscarEmpleadoInexistente()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:48 PDT" name="testBuscarEmpleadoInexistente" description="TC-08: Verificar que la tabla de empleados se carga" finished-at="2026-05-22T15:51:52 PDT" duration-ms="4040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuscarEmpleadoInexistente -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:52 PDT" name="tearDown" finished-at="2026-05-22T15:51:53 PDT" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:53 PDT" name="setUp" finished-at="2026-05-22T15:51:59 PDT" duration-ms="6149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditarEmpleado()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:51:59 PDT" name="testEditarEmpleado" description="TC-09: Editar empleado navega a la vista de edicion" finished-at="2026-05-22T15:52:10 PDT" duration-ms="11066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditarEmpleado -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:52:10 PDT" name="tearDown" finished-at="2026-05-22T15:52:10 PDT" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:52:10 PDT" name="setUp" finished-at="2026-05-22T15:52:16 PDT" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEliminarEmpleado()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:52:16 PDT" name="testEliminarEmpleado" description="TC-10: Verificar que se puede hacer logout desde el dashboard" finished-at="2026-05-22T15:52:20 PDT" duration-ms="4063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEliminarEmpleado -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@4450d156]" started-at="2026-05-22T15:52:20 PDT" name="tearDown" finished-at="2026-05-22T15:52:21 PDT" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PIMTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+tests\LeaveAndUITest.class
+tests\LoginTest.class
+utils\BaseTest.class
+tests\PIMTest.class

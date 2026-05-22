@@ -1,0 +1,4 @@
+pages\DashboardPage.class
+pages\LoginPage.class
+pages\LeavePage.class
+pages\PIMPage.class
