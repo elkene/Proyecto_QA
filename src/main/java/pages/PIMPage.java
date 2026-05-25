@@ -122,10 +122,9 @@ public class PIMPage {
     }
 
     private void waitForPageLoad() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        wait.until(webDriver -> {
+            Object readyState = ((JavascriptExecutor) webDriver).executeScript("return document.readyState");
+            return readyState != null && readyState.equals("complete");
+        });
     }
 }

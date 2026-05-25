@@ -24,11 +24,11 @@ public class BaseTest {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
         driver.get(BASE_URL);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+
+        org.openqa.selenium.support.ui.WebDriverWait wait =
+            new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15));
+        wait.until(org.openqa.selenium.support.ui.ExpectedConditions
+            .presenceOfElementLocated(org.openqa.selenium.By.cssSelector("input[name='username']")));
     }
 
     @AfterMethod

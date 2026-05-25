@@ -1,11 +1,14 @@
 package tests;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
 import pages.PIMPage;
 import utils.BaseTest;
+import java.time.Duration;
 
 public class PIMTest extends BaseTest {
 
@@ -54,11 +57,11 @@ public class PIMTest extends BaseTest {
         PIMPage pimPage = new PIMPage(driver);
         pimPage.searchEmployeeByName("Admin");
         pimPage.editFirstEmployee();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(webDriver -> webDriver.getCurrentUrl().contains("personalDetails") ||
+                   webDriver.getCurrentUrl().contains("viewPersonalDetails"));
+
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("personalDetails") || currentUrl.contains("viewPersonalDetails"),
                 "Debe navegar a la vista de edicion del empleado. URL actual: " + currentUrl);
