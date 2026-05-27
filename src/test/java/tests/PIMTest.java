@@ -44,7 +44,7 @@ public class PIMTest extends BaseTest {
     }
 
     @Test(description = "TC-08: Verificar que la tabla de empleados se carga")
-    public void testBuscarEmpleadoInexistente() {
+    public void testVerificartablaEmpleados() {
         loginAndGoToPIM();
         PIMPage pimPage = new PIMPage(driver);
         int rowCount = pimPage.getTableRowCount();
@@ -68,7 +68,7 @@ public class PIMTest extends BaseTest {
     }
 
     @Test(description = "TC-10: Verificar que se puede hacer logout desde el dashboard")
-    public void testEliminarEmpleado() {
+    public void testverificarDashboard() {
         loginAndGoToPIM();
         DashboardPage dashboardPage = new DashboardPage(driver);
         Assert.assertTrue(dashboardPage.isDashboardLoaded(),
